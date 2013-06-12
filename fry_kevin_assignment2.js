@@ -10,8 +10,7 @@ var arrKeywords = ["grocery shopping",
                    "aisle directories",
                    "find products",
                    "product search",
-                   "this week's ad"
-                    ];
+                   "this week's ad"];
 var numSocialNetworksLength = arrSocialNetworks.length;
 
 var outcome;
@@ -27,5 +26,12 @@ var funWhatSocialNetwork = function(varArgument){
 
 // boolean function
 var funCheckSameSocialNetworks = function(varSocial1, varSocial2){
-    
-}
+    if (varSocial1 === varSocial2) {
+        console.log(varSocial1 + " is the social networking tool we'll be using.");
+        return true;
+    } else {
+        console.log(varSocial1 + " is not the same as " + varSocial2);
+        return false;
+    }
+};
+
