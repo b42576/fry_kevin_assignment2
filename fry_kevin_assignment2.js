@@ -3,26 +3,29 @@
 // Project 2
 // functions and more
 
-var varString = "";
+var varSocialNetwork = "Twitter";
 var numMaxTweetCharacters = 160;
-var numMyTweetCharacters = 150;
-var arrSocialNetworks = "";
+var arrSocialNetworks = ["Twitter","Facebook"];
+var arrKeywords = ["grocery shopping",
+                   "aisle directories",
+                   "find products",
+                   "product search",
+                   "this week's ad"
+                    ];
+var numSocialNetworksLength = arrSocialNetworks.length;
+
 var outcome;
 
-var funTweetCharacters = function(myTweetChars,myMaxTweetChars){
-    var myoutcome;
-    myoutcome = myMaxTweetChars - myTweetChars;
+// procedure
+var funWhatSocialNetwork = function(varArgument){
+    if (varArgument === "Twitter"){
+        console.log("We're going to do some social networking with "+varArgument);
+    } else {
+        console.log("We're not going to do some social networking with "+varArgument);
+    }
 };
 
-//call functions
-//store returned values
-//procedure
-
-//boolean function 2 arguments
-
-//number function
-
-//string function
-
-//array function
-
+// boolean function
+var funCheckSameSocialNetworks = function(varSocial1, varSocial2){
+    
+}
