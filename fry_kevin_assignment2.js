@@ -20,9 +20,9 @@ var outcome;
 // procedure
 var funWhatSocialNetwork = function(varArgument){
     if (varArgument === "Twitter"){
-        console.log("We're going to do some social networking with "+varArgument);
+        console.log("We're going to do some social networking with "+varArgument+".");
     } else {
-        console.log("We're not going to do some social networking with "+varArgument);
+        console.log("We're not going to do some social networking with "+varArgument+".");
     }
 };
 
@@ -42,10 +42,12 @@ var funCheckSameSocialNetworks = function(varSocial1, varSocial2){
 var funHowManyMoreWords = function(numCharacters){
     var numAvgWordCount = 6;
     var numMoreWordsReturn;
+    var charRemaining = 0;
     while (numCharacters <= 160){
         numCharacters = numCharacters + 1;
+        charRemaining = charRemaining + 1;
     }
-    numMoreWordsReturn = numCharacters / numAvgWordCount;
+    numMoreWordsReturn = charRemaining / numAvgWordCount;
     return numMoreWordsReturn;
 };
 
@@ -82,7 +84,7 @@ var funAddMoreKeywords = function(numMoreKeywords, arrToAddOnto){
 
     for (i=0; i<numMoreKeywords; i++){
         arrToAddOnto.push(arrKeywordsToAdd[i]);
-        console.log("We added " + arrKeywordsToAdd[i] + " to the list of keywords we'll use.");
+        console.log("We added \"" + arrKeywordsToAdd[i] + "\" to the list of keywords we'll use.");
     }
     return arrToAddOnto;
 };
@@ -99,9 +101,9 @@ myAddMoreKeywords = funAddMoreKeywords(8,arrKeywords);
 
 // OUTPUT
 console.log("\n");
-console.log("");
-console.log("");
-console.log("");
-console.log("");
+console.log("It's " + myCheckSameSocialNetworks + " that Twitter and Facebook are the same social networks.");
+console.log("For a tweet of 100 characters, we could add about " + Math.round(myHowManyMoreWords) + " more words to our tweet.");
+console.log("We can compose a sample tweet like this: " + myComposeSampleTweet);
+console.log("There are lots of keywords to use for our project, " + myAddMoreKeywords + ", are some examples of those keywords.");
 
 // end
